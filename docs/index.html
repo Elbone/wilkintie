@@ -94,21 +94,6 @@
 			display: block;
 			margin: 32px auto;
 		}
-		header .email {
-			text-align: center;
-			margin: 32px auto;
-		}
-		header .email a {
-			font-size: 18px;
-			font-weight: 300;
-			line-height: 1.5;
-			color: #ca0000;
-			text-decoration: none;
-			border-bottom: 1px solid;
-		}
-		nav .email a:hover {
-			color: #ff0000;
-		}
 
 		/* Articles */
 		article {
@@ -126,16 +111,17 @@
 		}
 
 		nav {
-			
 			/*background-color: white;*/
 		}
 		nav ol {
 			max-width: 1280px;
 			margin: 0 auto;
+			padding: 0 8px;
 			display: flex;
+			display: -webkit-box;
+			display: -ms-flexbox;
 			flex-wrap: wrap;
 			justify-content: center;
-			padding: 0 8px;
 		}
 		nav li {
 			width: 100%;
@@ -152,12 +138,6 @@
 				width: 33.333%;
 			}
 		}
-		nav li:before {
-			content: counter();
-			position: absolute;
-			top: 0;
-			left: 0;
-		}
 		nav li a {
 			display: block;
 			text-decoration: none;
@@ -167,7 +147,7 @@
 			color: #8B5C29;
 			text-align: center;
 		}
-		nav img {
+		nav li img {
 			max-width: 100%;
 			height: auto;
 			display: block;
